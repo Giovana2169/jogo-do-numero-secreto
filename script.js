@@ -19,15 +19,16 @@ function verificarPalpite() {
 
          if(numeroAleatorio === palpite) {
             document.getElementById("jogo").innerText = "acertou com " + tentativas + " tentativas. 😘"; 
-            document.getElementById("imagem").innerHTML = '<img style="width: 250px;" src="img/imgvencedor.jpg">';
+            document.getElementById("imagem").innerHTML = '<img style="width: 250px;" src="imgvencedor.jpg">';
          
          } else if(numeroAleatorio > palpite) {
            document.getElementById("jogo").innerText =  "é maior 💕";
-           document.getElementById("imagem").innerHTML = '<img style="width: 250px;" src="img/cetaPcima.jpg">';
+           document.getElementById("imagem").innerHTML = '<img style="width: 250px;" src="cetaPcima.jpg">';
          } else {
             document.getElementById("jogo").innerText =  "é menor 😎";
-            document.getElementById("imagem").innerHTML = '<img style="width: 250px;" src="img/cetaPbaixo.jpg">';
+            document.getElementById("imagem").innerHTML = '<img style="width: 250px;" src="cetaPbaixo.jpg">';
          }
      
    }
+
    window.onload = iniciarJogo;
